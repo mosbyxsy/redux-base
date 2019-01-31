@@ -1,5 +1,5 @@
-const ADD_ITEM = 'add-item';
-const DEl_ITEM = 'del-item';
+const ADD_ITEM = 'add_item';
+const DEl_ITEM = 'del_item';
 
 export default {
     ADD_ITEM,

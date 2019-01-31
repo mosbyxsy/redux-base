@@ -1,6 +1,6 @@
 import todoListConst from '../constant/todoListConst';
 
-function add_item(item) {
+function addItem(item) {
     return {
         type: todoListConst.ADD_ITEM,
         payload: {
@@ -9,7 +9,7 @@ function add_item(item) {
     }
 }
 
-function del_item(id) {
+function delItem(id) {
     return {
         type: todoListConst.DEl_ITEM,
         payload: {
@@ -19,6 +19,6 @@ function del_item(id) {
 }
 
 export default {
-    add_item,
-    del_item
+    addItem,
+    delItem
 }

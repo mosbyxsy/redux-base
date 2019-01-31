@@ -58,21 +58,21 @@ const mapStateToProps = function(state) {
 // 以下几种写法都适用
 /*const mapDispatchToProps = function (dispatch) {
     return bindActionCreators({
-        addItem: todoListAction.add_item,
-        delItem: todoListAction.del_item
+        addItem: todoListAction.addItem,
+        delItem: todoListAction.delItem
     }, dispatch);
 };*/
 
 /*const mapDispatchToProps = function (dispatch) {
     return {
-        addItem: (...args) => dispatch(todoListAction.add_item(...args)),
-        delItem: (...args) => dispatch(todoListAction.del_item(...args)),
+        addItem: (...args) => dispatch(todoListAction.addItem(...args)),
+        delItem: (...args) => dispatch(todoListAction.delItem(...args)),
     }
 };*/
 
 const mapDispatchToProps = {
-    addItem: todoListAction.add_item,
-    delItem: todoListAction.del_item,
+    addItem: todoListAction.addItem,
+    delItem: todoListAction.delItem,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(Child)
