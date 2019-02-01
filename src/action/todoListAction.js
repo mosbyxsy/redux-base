@@ -11,7 +11,7 @@ function addItem(item) {
 
 function delItem(id) {
     return {
-        type: todoListConst.DEl_ITEM,
+        type: todoListConst.DEL_ITEM,
         payload: {
             id
         }

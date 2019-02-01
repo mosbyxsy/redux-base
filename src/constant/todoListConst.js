@@ -1,7 +1,7 @@
 const ADD_ITEM = 'add_item';
-const DEl_ITEM = 'del_item';
+const DEL_ITEM = 'DEL_ITEM';
 
 export default {
     ADD_ITEM,
-    DEl_ITEM
+    DEL_ITEM
 }

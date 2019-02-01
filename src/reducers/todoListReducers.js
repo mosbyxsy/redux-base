@@ -10,7 +10,7 @@ export default function (state = initState, action) {
             ...state,
             todoList: [...state.todoList, action.payload.todoList]
         }
-        case todoListConst.DEl_ITEM: return {
+        case todoListConst.DEL_ITEM: return {
             ...state,
             todoList: state.todoList.filter(item => item.id !== action.payload.id)
         }
